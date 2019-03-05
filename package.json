@@ -1,0 +1,29 @@
+{
+  "name": "@hamgom95/templates",
+  "version": "0.1.0",
+  "description": "template helper functions",
+  "main": "index.js",
+  "keywords": [
+    "template strings"
+  ],
+  "scripts": {
+    "test": "tap index.spec.js",
+    "build:doc": "jsdoc index.js",
+    "build:readme": "jsdoc2md --heading-depth=4 --template README.tpl.md index.js > README.md",
+    "prepublish": "npm run build:readme"
+  },
+  "author": {
+    "name": "Kevin Thomas",
+    "email": "hamgom95@gmail.com"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.5.5",
+    "jsdoc-to-markdown": "^4.0.1",
+    "tap": "^12.5.3"
+  },
+  "files": [
+    "index.js"
+  ],
+  "license": "ISC",
+  "dependencies": {}
+}
